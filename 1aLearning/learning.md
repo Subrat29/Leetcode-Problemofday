@@ -23,3 +23,11 @@
 #### Toggle bits:
 
 - You can toggle (flip) specific bits using a bitmask and the bitwise XOR (^) operator. For example, to toggle the fifth bit of a number x, you can use x ^= (1 << 4).
+
+### Sorting
+
+- Sorting the array takes O(n log n) time using an efficient sorting algorithm like quicksort or mergesort.
+
+### A new Data structure? Bitset
+
+- bitset<2048> b;
