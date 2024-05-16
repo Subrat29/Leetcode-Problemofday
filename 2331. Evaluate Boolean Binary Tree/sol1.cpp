@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// sc:
-// tc:
+// sc: no. of nodes
+// tc: height of tree or n in worst case
 
 struct TreeNode
 {
