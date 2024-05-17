@@ -11,7 +11,7 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-// sc: h
+// sc: h or n in worst case
 // tc: n
 
 TreeNode *removeLeafNodes(TreeNode *root, int target)
