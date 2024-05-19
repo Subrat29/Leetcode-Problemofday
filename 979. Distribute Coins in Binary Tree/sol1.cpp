@@ -18,7 +18,7 @@ int solve(TreeNode *root, TreeNode *parent)
 {
     if (!root)
         return 0;
-
+        
     int moves = solve(root->left, root) + solve(root->right, root);
     int coins = root->val - 1;
     if (parent)
