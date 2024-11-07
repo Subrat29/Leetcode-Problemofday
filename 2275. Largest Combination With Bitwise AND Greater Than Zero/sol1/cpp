@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+// Binary Representation of Integers: Each integer in the candidates vector can be represented in binary. For an integer
+// m, the number of bits required to represent it in binary is approximately log base2 m
+
+// tc: nlog(range like here 32)
+// sc: n
+
+int largestCombination(vector<int> &candidates)
+{
+    int n = candidates.size();
+    vector<int> bits(32, 0);
+
+    for (int i = 0; i < n; i++)
+    {
+        int j = 31;
+        while (j > 0 && candidates[i] > 0)
+        {
+            bits[j] += candidates[i] % 2;
+            candidates[i] /= 2;
+            j--;
+        }
+    }
+
+    return *max_element(bits.begin(), bits.end());
+}
+
+int main()
+{
+    return 0;
+}
