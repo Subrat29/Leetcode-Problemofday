@@ -31,3 +31,8 @@
 ### A new Data structure? Bitset
 
 - bitset<2048> b;
+
+### Disjoint Substrings in a String (Contest)
+- **"ab" and "cb" are distinct** because they are different strings.  
+- **"ab" and "cb" are NOT disjoint** if they overlap (e.g., in "abc", "ab" and "cb" share 'b').  
+- They **are disjoint** if taken from different parts of a string without overlap (e.g., in "abxycb").
