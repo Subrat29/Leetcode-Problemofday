@@ -1,7 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// tc: 3 choice each choose that char or not: 3*2^n
+// tc:
+// For 1st char we have - 3 choice
+//     n-1 char we have - 2 choice (because of condition that current char not similar to prev)
+// 3 * 2*2*2*2....n = 3*2^n-1
 // sc: n
 
 void solve(int n, int &k, string &s, string &ans, vector<char> &arr)
